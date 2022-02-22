@@ -35,8 +35,10 @@
             "include": "#annotations"
         },
         {
-            "include": "#informationFields.abc"
-        }
+            "include": "#information"
+        },
+        { "include": "#bar"},
+        { "include": "#symbols"}
     ],
     "repository": {
         "title": {
@@ -144,11 +146,11 @@
                 }
             ]
         },
-        "informationFields": {
+        "information": {
             "patterns": [
                 {
-                    "match": "^[A-Z]:(.*)",
-                    "name": "informationFields.abc"
+                    "match": "^([A-Z]:)(.*)",
+                    "name": "keyword.other.information.abc"
                 }
             ]
         },
@@ -161,11 +163,9 @@
             ]
         },
         "annotations": {
-            "begin": "\"",
-            "end": "\"",
             "patterns": [
                 {
-                    "match": ".",
+                    "match": "\"([^\".]*)\"",
                     "name": "annotation.inline.abc"
                 }
             ]
@@ -231,6 +231,14 @@
                 {
                     "match": "\\!([^\\!.]*)\\!",
                     "name": "keyword.other.ornaments.abc"
+                }
+            ]
+        },
+        "symbols": {
+            "patterns": [
+                {
+                    "match": "!([^!.]*)!",
+                    "name": "keyword.other.symbols.abc"
                 }
             ]
         }

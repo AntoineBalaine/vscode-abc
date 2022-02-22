@@ -6,13 +6,6 @@
     },
 	"tokenColors": [
         {
-            "scope":"keyword.other",
-            "settings": {
-                "foreground": "#038153",     
-                "fontStyle": ""
-            }
-        },
-        {
             "scope":"string.value",
             "settings": {
                 "foreground": "#038153",     
@@ -28,12 +21,12 @@
         {
             "scope":"keyword.other.instruction.abc",
             "settings": {
-                "foreground": "#038153",
+                "foreground": "#c75cd1",
                 "fontStyle": ""  
             }
         },              
         {
-            "scope": "informationFields.abc",
+            "scope": "keyword.other.information.abc",
             "settings": {
                 "foreground": "#d057d4",
                 "fontStyle": "bold underline"     
@@ -83,9 +76,16 @@
         {
             "scope":"annotation.inline.abc",
             "settings": {
-                "foreground": "#89e96c",     
+                "foreground": "#d6e96c",     
                 "fontStyle": "bold"
             }
-        }        
+        },
+        {
+            "scope":"keyword.other.symbols.abc",
+            "settings": {
+                "foreground": "#90430f",     
+                "fontStyle": "bold"
+            }
+        },
     ]
 }
