@@ -1,44 +1,23 @@
 {
     "scopeName": "source.abc",
     "patterns": [
-        {
-            "include": "#referencenumber"
-        },
-        {
-            "include": "#title"
-        },
-        {
-            "include": "#key"
-        },
-        {
-            "include": "#meter"
-        },
-        {
-            "include": "#length"
-        },
-        {
-            "include": "#tempo"
-        },
-        {
-            "include": "#composer"
-        },
-        {
-            "include": "#instructions"
-        },
-        {
-            "include": "#comments"
-        },
-        {
-            "include": "#voice-section"
-        },
-        {
-            "include": "#annotations"
-        },
-        {
-            "include": "#information"
-        },
+        { "include": "#referencenumber" },
+        { "include": "#title"},
+        { "include": "#key" },
+        { "include": "#meter" },
+        { "include": "#length" },
+        { "include": "#tempo" },
+        { "include": "#composer" },
+        { "include": "#instructions" },
+        { "include": "#comments" },
+        { "include": "#voice-section" },
+        { "include": "#annotations" },
+        { "include": "#information" },
         { "include": "#bar"},
-        { "include": "#symbols"}
+        { "include": "#chords" },
+        { "include": "#symbols"},
+        { "include": "#accidentals" },
+        { "include": "#ties" }
     ],
     "repository": {
         "title": {
@@ -202,10 +181,18 @@
                 }
             ]
         },
+        "accidentals": {
+            "patterns": [
+                {
+                    "match": "[\\^_=]",
+                    "name": "keyword.other.accidentals.abc"
+                }
+            ]
+        },
         "chords": {
             "patterns": [
                 {
-                    "match": "\"([^\".]*)\"",
+                    "match": "\\[.*?\\]",
                     "name": "keyword.other.chords.abc"
                 }
             ]
@@ -239,6 +226,18 @@
                 {
                     "match": "!([^!.]*)!",
                     "name": "keyword.other.symbols.abc"
+                }
+            ]
+        },
+        "ties": {
+            "patterns": [
+                {
+                    "match": "\\(",
+                    "name": "keyword.other.ties.abc"
+                },
+                {
+                    "match": "\\)",
+                    "name": "keyword.other.ties.abc"
                 }
             ]
         }

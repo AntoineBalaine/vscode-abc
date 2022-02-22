@@ -161,7 +161,7 @@ function getWebviewContent(
 	abcEngine = new abc.abc2svg.Abc(user);
 
 	try {
-		abcEngine.tosvg('song', '%%bgcolor white');
+		abcEngine.tosvg('song', '%%bgcolor #f3f5e1');
 
 
 		abc.abc2svg.modules.load(

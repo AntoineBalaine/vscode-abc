@@ -1,8 +1,10 @@
 {    
     "$schema": "vscode://schemas/color-theme",	
     "colors": {
-        "editor.selectionBackground": "#FFDF24",
-        "editor.selectionHighlightBackground": "#EFEFEF"
+        "editor.selectionBackground": "#f8eca8",
+        "editor.selectionHighlightBackground": "#edf0e2",
+        "editor.background": "#f3f5e1"
+
     },
 	"tokenColors": [
         {
@@ -21,15 +23,14 @@
         {
             "scope":"keyword.other.instruction.abc",
             "settings": {
-                "foreground": "#c75cd1",
+                "foreground": "#808080",
                 "fontStyle": ""  
             }
         },              
         {
             "scope": "keyword.other.information.abc",
             "settings": {
-                "foreground": "#d057d4",
-                "fontStyle": "bold underline"     
+                "foreground": "#038153",
             }
         },
         {
@@ -76,7 +77,7 @@
         {
             "scope":"annotation.inline.abc",
             "settings": {
-                "foreground": "#d6e96c",     
+                "foreground": "#6d7c18",     
                 "fontStyle": "bold"
             }
         },
@@ -84,6 +85,20 @@
             "scope":"keyword.other.symbols.abc",
             "settings": {
                 "foreground": "#90430f",     
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope":"keyword.other.accidentals.abc",
+            "settings": {
+                "foreground": "#90430f",     
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope":"keyword.other.ties.abc",
+            "settings": {
+                "foreground": "#35231836",     
                 "fontStyle": "bold"
             }
         },
