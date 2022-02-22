@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import * as abc from 'abc2svg/abc2svg-1'
+import * as abc from 'abc2svg/abc2svg-1';
 import * as path from 'path';
 
 let diagnosticCollection: vscode.DiagnosticCollection;

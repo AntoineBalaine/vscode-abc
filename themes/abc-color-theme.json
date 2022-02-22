@@ -33,6 +33,13 @@
             }
         },              
         {
+            "scope": "informationFields.abc",
+            "settings": {
+                "foreground": "#d057d4",
+                "fontStyle": "bold underline"     
+            }
+        },
+        {
             "scope":"keyword.other.ornaments.abc",
             "settings": {
                 "foreground": "#038153",
@@ -43,7 +50,7 @@
             "scope":"keyword.other.words.abc",
             "settings": {
                 "foreground": "#AD5E18",  
-                "fontStyle": ""   
+                "fontStyle": "bold"   
             }
         },              
         {
@@ -70,6 +77,13 @@
             "scope":"comment.line.abc",
             "settings": {
                 "foreground": "#808080",     
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope":"annotation.inline.abc",
+            "settings": {
+                "foreground": "#89e96c",     
                 "fontStyle": "bold"
             }
         }        
